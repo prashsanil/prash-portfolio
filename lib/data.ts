@@ -2,6 +2,7 @@ import React from 'react';
 import { CgWorkAlt } from 'react-icons/cg';
 import wikiPrompts from '@/public/wikiprompts.png';
 import pumpItUp from '@/public/pumpitup.png';
+import prashphotu from '@/public/pfp/Prash photuu.png';
 // import wordanalyticsImg from "@/public/wordanalytics.png";
 
 export const links = [
@@ -81,3 +82,5 @@ export const skillsData = [
   'MongoDB',
   'Python',
 ] as const;
+
+export default prashphotu;
