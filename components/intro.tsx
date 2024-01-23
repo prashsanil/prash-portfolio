@@ -12,6 +12,7 @@ import Link from 'next/link';
 export default function Intro() {
   return (
     <section className='mb-28 max-w-[50rem] text-center sm:mb-0'>
+      {/* pfp */}
       <div className='flex items-center justify-center'>
         <div className='relative'>
           <motion.div
@@ -46,18 +47,20 @@ export default function Intro() {
         </div>
       </div>
 
-      <motion.p
+      {/* intro text */}
+      <motion.h1
         className='mb-10 mt-4 px-4 text-2xl font-medium leading-[1.5] sm:text-4xl'
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
         Hello! I&apos;m{' '}
-        <span className='text-pink-500 font-semibold'>Prashwitha Sanil</span>, a{' '}
-        <span className='text-pink-500 font-semibold'>Fullstack Developer</span>{' '}
-        with <span className='text-pink-500 font-semibold'>2 years</span> of
+        <span className='text-blue-500 font-semibold'>Prashwitha Sanil</span>, a{' '}
+        <span className='text-blue-500 font-semibold'>Fullstack Developer</span>{' '}
+        with <span className='text-blue-500 font-semibold'>2 years</span> of
         experience and I build things for the web. 😎
-      </motion.p>
+      </motion.h1>
 
+      {/* buttons */}
       <motion.div
         className='flex flex-col sm:flex-row items-center justify-center gap-4 px-4 text-lg font-medium'
         initial={{ opacity: 0, y: 100 }}
@@ -70,26 +73,33 @@ export default function Intro() {
           href='#contact'
           className='group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-900 active:scale-105 transition border border-black-1/10'
         >
-          Contact me here <BsArrowRight className='opacity-70 group-hover:translate-x-1 transition' />
+          Contact me here{' '}
+          <BsArrowRight className='opacity-70 group-hover:translate-x-1 transition' />
         </Link>
         <a
-          href='/Prashwitha_Sanil_Resume.pdf' download
-          className='group bg-pink-500 text-white px-7 py-3 gap-2 rounded-full flex items-center focus:scale-110 hover:scale-110 hover:bg-pink-600 active:scale-105 transition cursor-pointer border border-black-1/10'
+          href='/Prashwitha_Sanil_Resume.pdf'
+          download
+          className='group bg-blue-500 text-white px-7 py-3 gap-2 rounded-full flex items-center focus:scale-110 hover:scale-110 hover:bg-blue-600 active:scale-105 transition cursor-pointer border border-black-1/10'
         >
-          Download CV <HiDownload className='opacity-70 group-hover:translate-y-1 transition'/>
+          Download CV{' '}
+          <HiDownload className='opacity-70 group-hover:translate-y-1 transition' />
         </a>
-        <a
-          href='https://www.linkedin.com/in/prashwitha-sanil/' target="_blank"
-          className='bg-white text-gray-800 p-4 gap-2 rounded-full flex items-center focus:scale-[1.15] hover:scale-[1.15] hover:bg-gray-50 hover:text-gray-950 active:scale-105 transition border border-black-1/10'
-        >
-          <BsLinkedin />
-        </a>
-        <a
-          href='https://github.com/prashsanil' target="_blank"
-          className='bg-white text-gray-800 p-4 gap-2 rounded-full flex items-center focus:scale-[1.15] hover:scale-[1.15] hover:bg-gray-50 active:scale-105 hover:text-gray-950 transition border border-black-1/10'
-        >
-          <FaGithubSquare />
-        </a>
+        <div className='flex sm:flex gap-2 items-center'>
+          <a
+            href='https://www.linkedin.com/in/prashwitha-sanil/'
+            target='_blank'
+            className='bg-white text-gray-800 p-4 gap-2 rounded-full flex items-center focus:scale-[1.15] hover:scale-[1.15] hover:bg-gray-50 hover:text-gray-950 active:scale-105 transition border border-black-1/10'
+          >
+            <BsLinkedin />
+          </a>
+          <a
+            href='https://github.com/prashsanil'
+            target='_blank'
+            className='bg-white text-gray-800 p-4 gap-2 rounded-full flex items-center focus:scale-[1.15] hover:scale-[1.15] hover:bg-gray-50 active:scale-105 hover:text-gray-950 transition border border-black-1/10'
+          >
+            <FaGithubSquare />
+          </a>
+        </div>
       </motion.div>
     </section>
   );
