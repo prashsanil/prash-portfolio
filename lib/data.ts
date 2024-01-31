@@ -53,17 +53,23 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    id: 1,
     title: 'Wiki Prompts',
     description:
       'Find and share helpful prompts to elevate your GPT results!',
     tags: ['React', 'Next.js', 'JavaScript', 'MongoDB', 'Tailwind'],
     imageUrl: wikiPrompts,
+    liveLink: 'https://aiprompt-pi.vercel.app/',
+    githubLink: 'https://github.com/prashsanil/aiprompt-nextjs',
   },
   { 
+    id: 2,
     title: 'Pump It Up',
     description: 'Website to help you with your fitness journey.',
     tags: ['React', 'JavaScript', 'Tailwind', 'Material UI'],
     imageUrl: pumpItUp,
+    liveLink: 'https://pump-it-up.netlify.app/',
+    githubLink: 'https://github.com/prashsanil/pump-it-up-fitness-app',
   },
 ] as const;
 

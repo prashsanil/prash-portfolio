@@ -7,12 +7,12 @@ import SectionHeading from './section-heading';
 export default function About() {
   return (
     <motion.section
-      className='mb-28 max-w-[46rem] text-left leading-10 sm:mb-0 text-lg'
+      className='mb-28 max-w-[46rem] text-left leading-7 sm:leading-10 sm:mb-0 text-lg'
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{delay: 0.75}}
     >
-      <SectionHeading>Project</SectionHeading>
+      <SectionHeading>About Me</SectionHeading>
       <p>
         &emsp;&emsp;I'm a <span className='font-semibold'>Developer</span> with
         a <span className='font-semibold'>Bachelor's Degree</span> in{' '}
